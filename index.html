@@ -685,11 +685,49 @@
     <div class="section-title">프로젝트</div>
     <div class="projects-grid">
 
-      <!-- P1: PFM AI Chat (featured) -->
+      <!-- P1: CardHub (featured) -->
       <div class="project-card featured fade-in">
         <div>
           <div class="project-meta">
             <span class="project-num">01</span>
+            <span class="badge badge-active">진행 중</span>
+            <span class="badge badge-team">팀 2인</span>
+          </div>
+          <div class="project-title">CardHub — 트레이딩 카드 거래 플랫폼</div>
+          <div class="project-period">2026.06 — 현재</div>
+          <p class="project-desc">
+            포켓몬·원피스 등 트레이딩 카드를 한 장 단위로 등록하고 거래하는 플랫폼.
+            프론트엔드 개발자 1명과 협업하며 백엔드 전반을 단독으로 설계·개발하고 있습니다.
+          </p>
+          <div class="project-stack">
+            <span class="stack-tag">Java 21</span>
+            <span class="stack-tag">Spring Boot</span>
+            <span class="stack-tag">Spring Data JPA</span>
+            <span class="stack-tag">PostgreSQL</span>
+            <span class="stack-tag">Flyway</span>
+            <span class="stack-tag">Toss Payments</span>
+          </div>
+        </div>
+        <div>
+          <div class="project-right-label">백엔드 주요 설계 · 구현</div>
+          <ul class="project-points">
+            <li>카드·판매글·주문·결제·배송·거래 도메인과 ERD 설계</li>
+            <li>판매글 등록부터 구매확정까지의 API와 상태 전이 정의</li>
+            <li>동시 주문을 방지하기 위한 10분 판매글 예약 및 만료 복구 흐름 설계</li>
+            <li>Toss Payments 결제 승인·취소와 결제 요청 중복 방지 방식 설계</li>
+            <li>결제 결과 지연·불명확 상황을 고려한 타임아웃 복구 및 재확인 흐름 정의</li>
+            <li>Flyway 마이그레이션, 공통 에러 응답, 권한 검증 기준 문서화</li>
+            <li>주요 거래 흐름과 예외 상황을 포함한 테스트 시나리오 134개 작성</li>
+            <li>AWS 기반 배포 구조와 CI/CD 적용 방향 정리</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- P2: PFM AI Chat (featured) -->
+      <div class="project-card featured fade-in">
+        <div>
+          <div class="project-meta">
+            <span class="project-num">02</span>
             <span class="badge badge-done">완료</span>
             <span class="badge badge-team">학부연구생</span>
           </div>
@@ -719,10 +757,10 @@
         </div>
       </div>
 
-      <!-- P2: 변호사 매칭 -->
+      <!-- P3: 변호사 매칭 -->
       <div class="project-card fade-in">
         <div class="project-meta">
-          <span class="project-num">02</span>
+          <span class="project-num">03</span>
           <span class="badge badge-active">진행 중</span>
           <span class="badge badge-team">팀 4인</span>
         </div>
@@ -744,10 +782,10 @@
         </ul>
       </div>
 
-      <!-- P3: 소비 습관 -->
+      <!-- P4: 소비 습관 -->
       <div class="project-card fade-in">
         <div class="project-meta">
-          <span class="project-num">03</span>
+          <span class="project-num">04</span>
           <span class="badge badge-done">완료</span>
           <span class="badge badge-personal">개인</span>
         </div>
@@ -770,10 +808,10 @@
         </ul>
       </div>
 
-      <!-- P4: 동아리 홈페이지 -->
+      <!-- P5: 동아리 홈페이지 -->
       <div class="project-card fade-in">
         <div class="project-meta">
-          <span class="project-num">04</span>
+          <span class="project-num">05</span>
           <span class="badge badge-done">완료</span>
           <span class="badge badge-team">팀 4인</span>
         </div>
@@ -793,10 +831,10 @@
         </ul>
       </div>
 
-      <!-- P5: 여떠잼 -->
+      <!-- P6: 여떠잼 -->
       <div class="project-card fade-in">
         <div class="project-meta">
-          <span class="project-num">05</span>
+          <span class="project-num">06</span>
           <span class="badge badge-done">완료</span>
           <span class="badge badge-team">팀 4인</span>
         </div>
@@ -817,10 +855,10 @@
         </ul>
       </div>
 
-      <!-- P6: 점프런 -->
+      <!-- P7: 점프런 -->
       <div class="project-card fade-in">
         <div class="project-meta">
-          <span class="project-num">06</span>
+          <span class="project-num">07</span>
           <span class="badge badge-done">완료</span>
           <span class="badge badge-personal">개인</span>
         </div>
@@ -892,6 +930,21 @@
             target="_blank"
             rel="noopener noreferrer"
             aria-label="코멘토 웹개발 직무부트캠프 수료증 새 창에서 보기"
+          >수료증 보기 ↗</a>
+        </div>
+      </div>
+      <div class="cert-card fade-in">
+        <div class="cert-icon cert-icon-code" aria-hidden="true">&lt;/&gt;</div>
+        <div class="cert-content">
+          <div class="cert-name">Kookmin University Campustown AI Vibe Coding Hackathon</div>
+          <div class="cert-meta">일상생활의 불편함을 해결할 AI-Agent 개발</div>
+          <div class="cert-meta" style="margin-top:0.25rem;">2026.09.20 &nbsp;·&nbsp; NXT CLOUD</div>
+          <a
+            class="cert-link"
+            href="assets/NXT.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="AI Vibe Coding Hackathon 수료증 새 창에서 보기"
           >수료증 보기 ↗</a>
         </div>
       </div>
