@@ -335,6 +335,17 @@
     .project-card:hover { border-color: var(--accent-border); transform: translateY(-3px); }
     .project-card:hover::before { opacity: 1; }
 
+    .project-card-link {
+      color: inherit;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .project-card-link:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 4px;
+    }
+
     .project-card.featured {
       grid-column: span 2;
       display: grid;
@@ -758,7 +769,13 @@
       </div>
 
       <!-- P3: 변호사 매칭 -->
-      <div class="project-card fade-in">
+      <a
+        class="project-card project-card-link fade-in"
+        href="https://github.com/capstoneSHIELD/SHIELD_FE"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="변호사 매칭 플랫폼 GitHub 저장소 새 창에서 보기"
+      >
         <div class="project-meta">
           <span class="project-num">03</span>
           <span class="badge badge-active">진행 중</span>
@@ -780,7 +797,7 @@
           <li>Form / Modal / Card 재사용 컴포넌트 설계</li>
           <li>로딩 / 에러 / 타임아웃 예외 처리 구조 구현</li>
         </ul>
-      </div>
+      </a>
 
       <!-- P4: 소비 습관 -->
       <div class="project-card fade-in">
