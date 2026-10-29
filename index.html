@@ -346,7 +346,7 @@
       outline-offset: 4px;
     }
 
-    .project-github-cta {
+    .project-link-cta {
       display: inline-flex;
       align-items: center;
       gap: 0.4rem;
@@ -362,14 +362,14 @@
       transition: background 0.2s, border-color 0.2s, color 0.2s, transform 0.2s;
     }
 
-    .project-card-link:hover .project-github-cta {
+    .project-card-link:hover .project-link-cta {
       background: var(--accent);
       border-color: var(--accent);
       color: #fff;
       transform: translateX(2px);
     }
 
-    .project-stack + .project-github-cta { margin-top: 0; }
+    .project-stack + .project-link-cta { margin-top: 0; }
 
     .project-card.featured {
       grid-column: span 2;
@@ -749,7 +749,7 @@
             <span class="stack-tag">Flyway</span>
             <span class="stack-tag">Toss Payments</span>
           </div>
-          <span class="project-github-cta">GitHub에서 보기 ↗</span>
+          <span class="project-link-cta">GitHub에서 보기 ↗</span>
         </div>
         <div>
           <div class="project-right-label">백엔드 주요 설계 · 구현</div>
@@ -829,7 +829,7 @@
           <li>Form / Modal / Card 재사용 컴포넌트 설계</li>
           <li>로딩 / 에러 / 타임아웃 예외 처리 구조 구현</li>
         </ul>
-        <span class="project-github-cta">GitHub에서 보기 ↗</span>
+        <span class="project-link-cta">GitHub에서 보기 ↗</span>
       </a>
 
       <!-- P4: 소비 습관 -->
@@ -859,7 +859,13 @@
       </div>
 
       <!-- P5: 동아리 홈페이지 -->
-      <div class="project-card fade-in">
+      <a
+        class="project-card project-card-link fade-in"
+        href="https://doum-page.vercel.app/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Do,WEB 동아리 홈페이지 새 창에서 보기"
+      >
         <div class="project-meta">
           <span class="project-num">05</span>
           <span class="badge badge-done">완료</span>
@@ -879,7 +885,8 @@
           <li>기본 CRUD 기능 구현</li>
           <li>실제 사용자 대상 서비스 배포 경험</li>
         </ul>
-      </div>
+        <span class="project-link-cta">홈페이지 보기 ↗</span>
+      </a>
 
       <!-- P6: 여떠잼 -->
       <div class="project-card fade-in">
